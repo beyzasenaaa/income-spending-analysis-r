@@ -1,161 +1,123 @@
-📊 Income & Spending Analysis with R
+# Income & Spending Analysis in R
 
-IST 347 – Statistical Analysis Applications
+This repository presents a comprehensive statistical analysis project conducted using **R and RStudio**, focusing on the relationship between individuals’ income levels, spending behavior, and demographic characteristics.
 
-This repository contains a comprehensive statistical analysis project conducted using R and RStudio.
-The study examines the relationship between income, spending habits, and demographic factors through exploratory data analysis, hypothesis testing, and regression models.
+The project was developed within the scope of **IST 347 – Statistical Analysis Applications** and demonstrates the practical use of descriptive statistics, hypothesis testing, regression models, and data visualization techniques in R.
 
-📌 Project Overview
+---
 
-Course: IST 347 – Statistical Analysis Applications
+## 📌 Project Objectives
 
-Term: 2024–2025 Fall
+The main objectives of this study are:
 
-Analysis Tool: R / RStudio
+- To analyze the relationship between **income and expenditure patterns**
+- To understand **financial behavior** across different demographic groups
+- To apply **inferential statistical methods** to real-world data
+- To present results using **reproducible analysis workflows** in R
 
-Observations: 2000 (randomly sampled)
+The analysis is based on **exploratory data analysis, hypothesis testing, and regression modeling**.
 
-Focus: Income–expenditure relationships and financial behavior analysis
+---
 
-The project was prepared as a midterm assignment and includes code, dataset, visualizations, and a detailed analytical report.
+## 📂 Dataset Information
 
-📂 Dataset Description
+The dataset consists of **2000 randomly sampled observations**, representing individuals’ financial and demographic profiles.
 
-The dataset consists of 2000 observations representing individuals’ income levels, expenditures, and demographic characteristics.
+### Variables
 
-Variables
+- **Income**: Annual income  
+- **Age**: Age of the individual  
+- **Dependents**: Number of dependents  
+- **Occupation**: Employment status (e.g., student, retired)  
+- **City Tier**: Development level of the city (1, 2, or 3)  
+- **Rent**: Monthly rent expenditure  
+- **Loan Repayment**: Monthly loan payment  
+- **Groceries**: Monthly grocery expenses  
+- **Transport**: Transportation costs  
+- **Eating Out**: Dining-out expenses  
+- **Entertainment**: Entertainment spending  
+- **Utilities**: Electricity, water, and other utilities  
+- **Healthcare**: Healthcare expenses  
+- **Education**: Education-related costs  
+- **Miscellaneous**: Other additional expenses  
 
-Income: Annual income
+---
 
-Age: Age of the individual
+## 🔍 Analysis Overview
 
-Dependents: Number of dependents
+The following statistical techniques and R functions were applied throughout the analysis:
 
-Occupation: Employment status (e.g., student, retired)
+### Descriptive & Inferential Statistics
+- Relative frequency and summary statistics (`mean()`, `summary()`)
+- Confidence interval estimation for the median (`wilcox.test()`)
+- Proportion tests and confidence intervals (`prop.test()`)
 
-City Tier: City development level (1, 2, or 3)
+### Correlation & Regression Analysis
+- Correlation significance testing (`cor.test()`)
+- Simple linear regression (`lm()`)
+- Multiple linear regression models
+- Log-transformed regression analysis (`log()`)
+- Residual diagnostics and model evaluation (`augment()`)
+- Detection of influential observations (`influence.measures()`)
 
-Rent: Monthly rent expense
+### Hypothesis Testing
+- One-way ANOVA (`oneway.test()`)
 
-Loan Repayment: Monthly loan payment
+---
 
-Groceries: Monthly grocery spending
+## 📊 Data Visualization
 
-Transport: Transportation expenses
+All visualizations were created using **ggplot2** and customized to enhance interpretability.  
+The repository includes:
 
-Eating Out: Dining-out expenses
+- Bar charts with custom color mappings  
+- Boxplots across factor levels  
+- Histograms with density estimation  
+- Scatter plots and relationship visuals  
+- Regression plots  
+- Normal Q–Q plots  
+- Reference lines using `geom_hline()` and `geom_vline()`
 
-Entertainment: Entertainment expenses
+All figures are stored in the **`Grafikler/`** directory.
 
-Utilities: Electricity, water, etc.
+---
 
-Healthcare: Healthcare expenses
-
-Education: Education-related expenses
-
-Miscellaneous: Other additional expenses
-
-🔍 Analysis Scope
-
-The following statistical methods and analyses were applied:
-
-Descriptive & Inferential Statistics
-
-Relative frequency calculation (mean())
-
-Confidence interval for median (wilcox.test())
-
-Proportion tests (prop.test())
-
-Confidence intervals for proportions
-
-Correlation & Regression
-
-Correlation significance testing (cor.test())
-
-Simple linear regression (lm())
-
-Multiple linear regression
-
-Log-transformed regression models
-
-Residual diagnostics (augment())
-
-Influential observation detection (influence.measures())
-
-Hypothesis Testing
-
-One-way ANOVA (oneway.test())
-
-📈 Data Visualization
-
-All visualizations were created using ggplot2 and exported as .png files:
-
-Bar charts (custom coloring)
-
-Boxplots by factor levels
-
-Histograms with density estimation
-
-Scatter plots and relationship visuals
-
-Regression line plots
-
-Normal Q–Q plots
-
-Horizontal and vertical reference lines
-
-📁 All figures are available in the /Grafikler directory.
-
-🧾 R Markdown Report
+## 🧾 R Markdown Component
 
 An R Markdown document was prepared to demonstrate:
 
-Text formatting
+- Text formatting and narrative reporting  
+- Display of R code and outputs  
+- Table creation  
+- Figure embedding  
+- Mathematical equation rendering  
 
-Displaying R code and outputs
+The compiled HTML output is included for easy viewing.
 
-Table creation
+---
 
-Plot embedding
-
-Mathematical equation rendering
-
-The rendered HTML output is included in the repository.
-
-📁 Repository Structure
-├── ist_347.R
-├── fonksiyonlar.R
-├── ist_347_RMarkdown.html
-├── veri.txt
-├── IST_347_Ara_Sınav_Ödevi.pdf
-├── Grafikler/
-│   ├── Bar Grafiği 1.png
-│   ├── Bar Grafiği 2.png
-│   ├── Boxplot.png
-│   ├── Histogram Grafiği.png
-│   ├── Doğrusal Regresyon.png
-│   └── ...
+## 📁 Repository Structure
 
 
-🎯 Objective
+---
 
-The main objective of this project is to:
+## 🛠 Tools & Technologies
 
-Analyze the relationship between income and spending behavior
+- **R**
+- **RStudio**
+- **ggplot2**
+- **dplyr**
+- **tidyr**
+- **broom**
 
-Understand financial patterns of individuals
+---
 
-Examine the impact of demographic factors on expenditures
+## 📚 References
 
-This is achieved through exploratory data analysis, hypothesis testing, and regression modeling.
+- Chang, W. *R Cookbook*  
+- R Documentation  
+- ggplot2 Documentation  
 
-📚 References
+---
 
-R Cookbook (Winston Chang)
-
-Official R documentation
-
-ggplot2 documentation
-
-✨ If you’re viewing this project from LinkedIn or elsewhere, feel free to explore the code, visuals, and report for a complete statistical analysis workflow in R.
+This project demonstrates a complete **statistical analysis workflow in R**, from data preparation to modeling and visualization, using reproducible and well-documented methods.
